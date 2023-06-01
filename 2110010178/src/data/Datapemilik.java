@@ -3,28 +3,30 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package data;
+
 /**
  *
  * @author Rudia
  */
-public class RegistrasiKTP {
-    private int kodeKtp;
-    private int Tanggal;
-    private String Nama;
-    private String Jenis_Permohonan;
-    private String Kelurahan;
-    private String Alamat;
-    private String Rt;
-    private String Rw;
-    private String Jk;
-    private String Agama;
-    private String Pekerjaan;
-    private String Kw;
+public class Datapemilik{
+    int NIK;
+    int Tanggal;
+    String Nama;
+    String Jenis_Permohonan;
+    String Kelurahan;
+    String Alamat;
+    String Rt;
+    String Rw;
+    String Jk;
+    String Agama;
+    String Pekerjaan;
+    String Kw;
     
-public RegistrasiKTP(){}
+    
+public Datapemilik(){}
 
-public RegistrasiKTP(int kode, int tgl, String nama, String jenis, String kel, String alamat, String rt, String rw, String jk, String agama, String pekerjaan, String kw){
-   this.kodeKtp=kode;
+    public Datapemilik(int nik, int tgl, String nama, String jenis, String kel, String alamat, String rt, String rw, String jk, String agama, String pekerjaan, String kw){
+   this.NIK=nik;
    this.Tanggal=tgl;
    this.Nama=nama;
    this.Jenis_Permohonan=jenis;
@@ -41,12 +43,12 @@ public RegistrasiKTP(int kode, int tgl, String nama, String jenis, String kel, S
    
     
 
-public void setkodektp(int kode){
-    this.kodeKtp=kode;
+public void setNik(int nik){
+    this.NIK=nik;
 }
 
-public int getkodektp(){
-    return this.kodeKtp;
+public int getNik(){
+    return this.NIK;
 }
 
 public void settanggal(int tgl){
@@ -137,8 +139,9 @@ public String getkw(){
     return this.Kw;
 }
 
-   public void tampilkanDataRegistrasiKTP() {
-    System.out.println("Kode : " + kodeKtp);
+
+ public void tampilkanDatapemilik () {
+    System.out.println("NIK: " + NIK);
     System.out.println("Tanggal: " + Tanggal);
     System.out.println("Nama : " + Nama);
     System.out.println("Jenis Pemohonan : " + Jenis_Permohonan);

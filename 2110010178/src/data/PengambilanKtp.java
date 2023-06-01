@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package data;
-import java.util.Scanner;
+
 
 /**
  *
@@ -20,18 +20,17 @@ public class PengambilanKtp {
 public PengambilanKtp(){}
 
 public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, String kel, String ket){
-    setKodektp(Kodektp);
-    setTanggal(tanggal);
-    setNamaPemilik(NamaPemilik);
-    setNamaPengambil(NamaPengambil);
-    setKelurahan(kelurahan);
-    setKeterangan(keterangan);
+        this.Kodektp=kode;
+        this.tanggal=Tanggal;
+        this.NamaPemilik=pemilik;
+        this.NamaPengambil=pengambil;
+        this.kelurahan=kel;
+        this.keterangan=ket;
+                
+          
     
 }
     public void setKodektp(int kode){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan kode KTP : ");
-        kode = objku.nextInt();
         this.Kodektp=kode;
     }
 
@@ -40,9 +39,6 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
     }
     
     public void setTanggal(int Tanggal){
-        Scanner objku = new Scanner (System.in);
-        System.out.println("Masukkan Tanggal : ");
-        Tanggal = objku.nextInt();
         this.tanggal=Tanggal;
     }
     
@@ -51,9 +47,6 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
     }
     
     public void setNamaPemilik(String pemilik){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan nama pemilik : ");
-        pemilik = objku.nextLine();
         this.NamaPemilik=pemilik;
     }
     
@@ -62,9 +55,6 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
     }
     
     public void setNamaPengambil(String pengambil){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan nama pengambil : ");
-        pengambil = objku.nextLine();
         this.NamaPengambil=pengambil;
     }
     
@@ -73,9 +63,6 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
     }
     
     public void setKelurahan(String kel){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Kelurahan : ");
-        kel = objku.nextLine();
         this.kelurahan=kel;
     }
     
@@ -84,9 +71,6 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
     }
     
     public void setKeterangan(String ket){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Keterangan : ");
-        ket = objku.nextLine();
         this.keterangan=ket;
     }
     
@@ -94,12 +78,12 @@ public PengambilanKtp(int kode, int Tanggal, String pemilik, String pengambil, S
         return this.keterangan;
     }
      public void tampilkanDataPengambilanKTP() {
-        System.out.println("Kode : " + getKodektp());
-        System.out.println("Tanggal: " + getTanggal());
-        System.out.println("Nama Pemilik : " + getNamaPemilik());
-        System.out.println("Nama Pengambil : " + getNamaPengambil());
-        System.out.println("Kelurahan : " + getKelurahan());
-        System.out.println("Keterangan : " + getKeterangan());
+        System.out.println("Kode : " + Kodektp);
+        System.out.println("Tanggal: " + tanggal);
+        System.out.println("Nama Pemilik : " + NamaPemilik);
+        System.out.println("Nama Pengambil : " + NamaPengambil);
+        System.out.println("Kelurahan : " + kelurahan);
+        System.out.println("Keterangan : " + keterangan);
     }
 }
 

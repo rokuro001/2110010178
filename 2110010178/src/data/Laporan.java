@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package data;
-import java.util.Scanner;
 
 /**
  *
@@ -20,18 +19,15 @@ public class Laporan {
     public Laporan(){}
     
     public Laporan(int no, int tgl, String pengambil, String jenis, int kode, String status){
-        setNo(No);
-        setTanggal(tanggal);
-        setNamapengambil(namaPengambil);
-        setJenis_pengambil(Jenis_Pengambilan);
-        setKode(Kode);
-        setStatus(Status);
+        this.No= no;
+        this.tanggal=tgl;
+        this.namaPengambil=pengambil;
+        this.Jenis_Pengambilan=jenis;
+        this.Kode=kode;
+        this.Status=status;
     }
     
     public void setNo(int no){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan No :");
-        no = objku.nextInt();
         this.No=no;
     }
     
@@ -40,9 +36,6 @@ public class Laporan {
     }
     
      public void setTanggal(int tgl){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan Tanggal : ");
-        tgl = objku.nextInt();
         this.tanggal=tgl;
     }
     
@@ -51,9 +44,6 @@ public class Laporan {
     }
     
     public void setNamapengambil(String pengambil){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan Nama Pengambil : ");
-        pengambil = objku.nextLine();
         this.namaPengambil=pengambil;
     }
     
@@ -61,9 +51,6 @@ public class Laporan {
         return this.namaPengambil;
     }
     public void setJenis_pengambil(String jenis){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan Jenis Pengambilan : ");
-        jenis = objku.nextLine();
         this.Jenis_Pengambilan=jenis;
     }
     
@@ -72,9 +59,6 @@ public class Laporan {
     }
     
     public void setKode(int kode){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan Kode : ");
-        kode = objku.nextInt();
         this.Kode=kode;
     }
     
@@ -83,9 +67,6 @@ public class Laporan {
     }
     
     public void setStatus(String status){
-        Scanner objku= new Scanner(System.in);
-        System.out.println("Masukkan Status : ");
-        status = objku.nextLine();
         this.Status=status;
     }
     
@@ -94,11 +75,11 @@ public class Laporan {
     }
     
     public void tampilkanLaporan() {
-        System.out.println("No : " + getNo());
-        System.out.println("Tanggal : " + getTanggal());
-        System.out.println("Nama Pengambil: " + getNamapengambil());
-        System.out.println("Jenis Pengambilan: " + getJenis_pengambil());
-        System.out.println("Kode : " + getKode());
-        System.out.println("Status : " + getStatus());
+        System.out.println("No : " + No);
+        System.out.println("Tanggal : " + tanggal);
+        System.out.println("Nama Pengambil: " + namaPengambil);
+        System.out.println("Jenis Pengambilan: " + Jenis_Pengambilan);
+        System.out.println("Kode : " + Kode);
+        System.out.println("Status : " + Status);
     }
 }

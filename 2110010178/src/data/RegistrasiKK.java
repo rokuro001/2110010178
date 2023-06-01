@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package data;
-import java.util.Scanner;
 
 /**
  *
@@ -22,20 +21,17 @@ public class RegistrasiKK {
     public RegistrasiKK(){}
     
     public RegistrasiKK(int kode, int tanggal, String nama, String kel, String alamat, String rt, String rw, String ket){
-        setkodekk(KodeKK);
-        settanggal(Tanggal);
-        setnama(Nama);
-        setkelurahan(Kelurahan);
-        setalamat(Alamat);
-        setrt(Rt);
-        setrw(Rw);
-        setketerangan(Keterangan);
+        this.KodeKK=kode;
+        this.Tanggal=tanggal;
+        this.Nama=nama;
+        this.Kelurahan=kel;
+        this.Alamat=alamat;
+        this.Rt=rt;
+        this.Rw=rw;
+        this.Keterangan=ket;
     }
     
     public void setkodekk(int kode){
-    Scanner objku = new Scanner(System.in);
-    System.out.println("Masukkan kode KTP : ");
-    kode = objku.nextInt();
     this.KodeKK=kode;
 }
 
@@ -44,90 +40,69 @@ public int getkodekk(){
 }
 
 public void settanggal(int tanggal){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Tanggal : ");
-        tanggal = objku.nextInt();
-        this.Tanggal=tanggal;
+    this.Tanggal=tanggal;
     }
     
     public int gettanggal(){
-        return this.Tanggal;
+    return this.Tanggal;
     }
     
     public void setnama(String nama){
-        Scanner objku = new Scanner (System.in);
-        System.out.println("Masukkan nama : ");
-        nama = objku.nextLine();
-        this.Nama=nama;
+    this.Nama=nama;
     }
     
     public String getnama(){
-        return this.Nama;
+    return this.Nama;
     }
     
     public void setkelurahan(String kel){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Kelurahan : ");
-        kel = objku.nextLine();
-        this.Kelurahan=kel;
+    this.Kelurahan=kel;
     }
     
     public String getkelurahan(){
-        return this.Kelurahan;
+    return this.Kelurahan;
     }
     
     public void setalamat(String alamat){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan alamat : ");
-        alamat = objku.nextLine();
-        this.Alamat=alamat;
+    this.Alamat=alamat;
     }
     
     public String getalamat(){
-        return this.Alamat;
+    return this.Alamat;
     }
     
     public void setrt(String rt){
-        Scanner objku=new Scanner(System.in);
-        System.out.println("Masukkan RT : ");
-        rt = objku.nextLine();
-        this.Rt=rt;
+    this.Rt=rt;
     }
     
     public String getrt(){
-        return this.Rt;
+    return this.Rt;
     }
     
-     public void setrw(String rw){
-        Scanner objku=new Scanner(System.in);
-        System.out.println("Masukkan RW : ");
-        rw = objku.nextLine();
-        this.Rw=rw;
+    public void setrw(String rw){
+    this.Rw=rw;
     }
     
     public String getrw(){
-        return this.Rw;
+    return this.Rw;
     }
     
     public void setketerangan(String ket){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Keterangan");
-        ket = objku.nextLine();
-        this.Keterangan=ket;
+    this.Keterangan=ket;
     }
     
     public String getketerangan(){
-        return this.Keterangan;
+    return this.Keterangan;
     }
     
     public void tampilkanDataRegistrasiKK() {
-        System.out.println("Kode : " + getkodekk());
-        System.out.println("Tanggal: " + gettanggal());
-        System.out.println("Nama : " + getnama());
-        System.out.println("Kelurahan : " + getkelurahan());
-        System.out.println("Alamat : " + getalamat());
-        System.out.println("Rt : " + getrt());
-        System.out.println("Rw : " + getrw());
-        System.out.println("Keterangan : " + getketerangan());
+    System.out.println("Kode : " + KodeKK);
+    System.out.println("Tanggal: " + Tanggal);
+    System.out.println("Nama : " + Nama);
+    System.out.println("Kelurahan : " + Kelurahan);
+    System.out.println("Alamat : " + Alamat);
+    System.out.println("Rt : " + Rt);
+    System.out.println("Rw : " + Rw);
+    System.out.println("Keterangan : " + Keterangan);
     }
 }

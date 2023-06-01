@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package data;
-import java.util.Scanner;
 
 
 /**
@@ -24,20 +23,18 @@ public class PengambilanKK {
     public PengambilanKK(){}
     
     public PengambilanKK(int kode, int tgl, int no, String kepalaKK, String pengambil, String kel, String alamat, String ket){
-        setkodeKK(KodeKK);
-        setTanggal(tanggal);
-        setNoKK(noKK);
-        setnamaKepalaKK(NamaKepalaKK);
-        setnamaPengambil(NamaPengambil);
-        setKelurahan(Kelurahan);
-        setAlamat(Alamat);
-        setKeterangan(keterangan);
+        this.KodeKK = kode;
+        this.tanggal = tgl;
+        this.noKK = no;
+        this.NamaKepalaKK=kepalaKK;
+        this.NamaPengambil=pengambil;
+        this.Kelurahan=kel;
+        this.Alamat=alamat;
+        this.keterangan=ket;
+    
     }
     
     public void setkodeKK(int kode){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Kode KK : ");
-        kode = objku.nextInt();
         this.KodeKK=kode;
     }
     
@@ -46,9 +43,6 @@ public class PengambilanKK {
     }
     
     public void setTanggal(int tgl){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Tanggal : ");
-        tgl = objku.nextInt();
         this.tanggal=tgl;
     }
     
@@ -57,9 +51,6 @@ public class PengambilanKK {
     }
     
     public void setNoKK(int no){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan No KK : ");
-        no = objku.nextInt();
         this.noKK=no;
     }
     
@@ -68,9 +59,6 @@ public class PengambilanKK {
     }
     
     public void setnamaKepalaKK(String kepalaKK){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Nama Kepala KK : ");
-        kepalaKK = objku.nextLine();
         this.NamaKepalaKK=kepalaKK;
     }
     
@@ -79,9 +67,6 @@ public class PengambilanKK {
     }
     
     public void setnamaPengambil(String pengambil){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Masukkan Pengambil : ");
-        pengambil = objku.nextLine();
         this.NamaPengambil=pengambil;
     }
     
@@ -91,9 +76,6 @@ public class PengambilanKK {
     
     
     public void setKelurahan(String kel){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Kelurahan : ");
-        kel = objku.nextLine();
         this.Kelurahan=kel;
     }
     
@@ -102,9 +84,6 @@ public class PengambilanKK {
     }
     
     public void setAlamat(String alamat){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Alamat : ");
-        alamat = objku.nextLine();
         this.Alamat=alamat; 
     } 
     
@@ -113,9 +92,6 @@ public class PengambilanKK {
     }
     
     public void setKeterangan(String ket){
-        Scanner objku = new Scanner(System.in);
-        System.out.println("Keterangan : ");
-        ket = objku.nextLine();
         this.keterangan=ket;
     }
     
@@ -124,13 +100,13 @@ public class PengambilanKK {
     }
     
        public void tampilkanDataPengambilanKK() {
-        System.out.println("Kode : " + getkodeKK());
-        System.out.println("Tanggal: " + getTanggal());
-        System.out.println("No KK : " + getNoKK());
-        System.out.println("Nama Kepala KK : " + getnamaKepalaKK());
-        System.out.println("Nama Pengambil : " + getnamaPengambil());
-        System.out.println("Kelurahan : " + getKelurahan());
-        System.out.println("Alamat : " + getAlamat());
-        System.out.println("Keterangan : " + getKeterangan());
+        System.out.println("Kode : " + KodeKK);
+        System.out.println("Tanggal: " + tanggal);
+        System.out.println("No KK : " + noKK);
+        System.out.println("Nama Kepala KK : " + NamaKepalaKK);
+        System.out.println("Nama Pengambil : " + NamaPengambil);
+        System.out.println("Kelurahan : " + Kelurahan);
+        System.out.println("Alamat : " + Alamat);
+        System.out.println("Keterangan : " + keterangan);
     }
 }
