@@ -9,18 +9,18 @@ package data;
  * @author Rudia
  */
 public class Datapemilik{
-    int NIK;
-    int Tanggal;
-    String Nama;
-    String Jenis_Permohonan;
-    String Kelurahan;
-    String Alamat;
-    String Rt;
-    String Rw;
-    String Jk;
-    String Agama;
-    String Pekerjaan;
-    String Kw;
+    private int NIK;
+    private int Tanggal;
+    private String Nama;
+    private String Jenis_Permohonan;
+    private String Kelurahan;
+    private String Alamat;
+    private String Rt;
+    private String Rw;
+    private String Jk;
+    private String Agama;
+    private String Pekerjaan;
+    private String Kw;
     
     
 public Datapemilik(){}
